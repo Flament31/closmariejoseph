@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'lily_script_oneregular';
+    src: url('fonts/lilyscriptone-regular-webfont.eot');
+    src: url('fonts/lilyscriptone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lilyscriptone-regular-webfont.woff2') format('woff2'),
+         url('fonts/lilyscriptone-regular-webfont.woff') format('woff'),
+         url('fonts/lilyscriptone-regular-webfont.svg#lily_script_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto 0px auto;
+	max-width: 1250px;
+}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+img
+{
+	margin: 5px;
+}
+
+nav
+{
+	display: flex;
+	justify-content: center;
+	text-align: top;
+}
+
+.boutonmenuprincipal 
+{
+   cursor: pointer;
+   margin: 5px;
+   font-size: 1.2em;
+   background-color: white;
+   border: none;
+}
+
+.dropdown 
+{
+   display: inline-block;
+}
+
+.dropdown-child 
+{
+   display: none;
+   position: absolute;
+   background-color: white;
+}
+
+.dropdown-child a 
+{
+   text-decoration: none;
+   display: block;
+   padding: 10px;
+}
+
+.dropdown:hover .dropdown-child 
+{
+    display: block;
+}
+
+h1
+{
+	margin: 0;
+}
+
+h3
+{
+	font-size: 1.2em;
+	margin: 0 0 20px 0;
+}
+
+h1, h2, h3, button
+{
+	font-family: 'lily_script_oneregular';
+}
+
+#photos_gîte
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+}
+
+#legende
+{
+	margin: 0 0 120px 5px;
+	font-size: 0.9em;
+	max-width: 530px;
+	display: flex;
+	text-align: center;
+}
+
+#photos_maison
+{
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+#photo_legend
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#texte
+{
+	font-size: 1.2em;
+}
+
+#commentaires
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (min-width: 992px)
+{
+	#commentaires
+	{
+		flex-wrap: nowrap;
+		flex-direction: column;
+		width: 60%;
+	}
+}
