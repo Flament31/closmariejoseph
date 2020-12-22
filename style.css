@@ -14,6 +14,8 @@ body
 {
 	margin: 0;
 	padding: 0;
+	background-color: #520E0E;
+	color: #CFD7D1;
 }
 
 main
@@ -22,6 +24,7 @@ main
 	flex-direction: column;
 	margin: 0px auto 0px auto;
 	max-width: 1250px;
+	font-size: 1.1em;
 }
 
 section
@@ -30,9 +33,17 @@ section
 	flex-direction: column;
 }
 
+#reservation
+{
+	width: 25%;
+}
+
 img
 {
-	margin: 5px;
+	margin: 10px 10px 10px 0px;
+	border: 1px outset black;
+	border-radius: 5px;
+	box-shadow: black 8px 8px 10px;
 }
 
 nav
@@ -42,12 +53,29 @@ nav
 	text-align: top;
 }
 
+a
+{
+	text-decoration: none;
+	color: #CFD7D1;
+}
+
+a:hover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+div
+{
+	margin: 15px 0px 15px 0px;
+}
+
 .boutonmenuprincipal 
 {
    cursor: pointer;
    margin: 5px;
    font-size: 1.2em;
-   background-color: white;
+   background-color: #520E0E;
    border: none;
 }
 
@@ -60,7 +88,8 @@ nav
 {
    display: none;
    position: absolute;
-   background-color: white;
+   background-color: #520E0E;
+   margin: 0;
 }
 
 .dropdown-child a 
@@ -84,6 +113,11 @@ h3
 {
 	font-size: 1.2em;
 	margin: 0 0 20px 0;
+}
+
+h4
+{
+	margin-bottom: : 0;
 }
 
 h1, h2, h3, button
@@ -133,7 +167,12 @@ h1, h2, h3, button
 footer 
 {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+}
+
+#signature
+{
+	margin-top: 80px;
 }
 
 @media all and (min-width: 992px)
