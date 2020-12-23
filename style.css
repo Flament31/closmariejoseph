@@ -7,7 +7,6 @@
          url('fonts/lilyscriptone-regular-webfont.svg#lily_script_oneregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body
@@ -18,11 +17,11 @@ body
 	color: #CFD7D1;
 }
 
-main
+main, header
 {
 	display: flex;
 	flex-direction: column;
-	margin: 0px auto 0px auto;
+	margin: 0 auto 0 auto;
 	max-width: 1250px;
 	font-size: 1.1em;
 }
@@ -33,9 +32,31 @@ section
 	flex-direction: column;
 }
 
+#section_contact
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#map
+{
+	margin-top: 100px;
+	max-width: 97%;
+}
+
 #reservation
 {
 	width: 25%;
+}
+
+fieldset
+{
+	border: 1px black outset;
+	border-radius: 5px;
+	box-shadow: black 8px 8px 10px;
+	max-width: 97%;
 }
 
 img
@@ -44,6 +65,7 @@ img
 	border: 1px outset black;
 	border-radius: 5px;
 	box-shadow: black 8px 8px 10px;
+	max-width: 97%;
 }
 
 nav
@@ -51,6 +73,9 @@ nav
 	display: flex;
 	justify-content: center;
 	text-align: top;
+	border: 1px outset black;
+	border-radius: 5px;
+	box-shadow: black 8px 8px 10px;
 }
 
 a
@@ -90,6 +115,7 @@ div
    position: absolute;
    background-color: #520E0E;
    margin: 0;
+   border: 1px solid black;
 }
 
 .dropdown-child a 
@@ -97,6 +123,7 @@ div
    text-decoration: none;
    display: block;
    padding: 10px;
+   border: 1px solid black;
 }
 
 .dropdown:hover .dropdown-child 
@@ -168,9 +195,13 @@ footer
 {
 	display: flex;
 	justify-content: space-between;
+	background-color: #0F0F0F;
+	border-top: 1px outset black;
+	border-radius: 10px 10px 0 0;
+	padding: 5px;
 }
 
-#signature
+#signature, #adresse
 {
 	margin-top: 80px;
 }
