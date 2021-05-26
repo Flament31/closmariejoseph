@@ -1,20 +1,23 @@
 @font-face {
-    font-family: 'lily_script_oneregular';
-    src: url('fonts/lilyscriptone-regular-webfont.eot');
-    src: url('fonts/lilyscriptone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lilyscriptone-regular-webfont.woff2') format('woff2'),
-         url('fonts/lilyscriptone-regular-webfont.woff') format('woff'),
-         url('fonts/lilyscriptone-regular-webfont.svg#lily_script_oneregular') format('svg');
+    font-family: 'abhaya_libremedium';
+    src: url('fonts/AbhayaLibre-Medium-webfont.eot');
+    src: url('fonts/AbhayaLibre-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AbhayaLibre-Medium-webfont.woff2') format('woff2'),
+         url('fonts/AbhayaLibre-Medium-webfont.woff') format('woff'),
+         url('fonts/AbhayaLibre-Medium-webfont.ttf') format('truetype'),
+         url('fonts/AbhayaLibre-Medium-webfont.svg#abhaya_libremedium') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
+
 
 body
 {
 	margin: 0;
 	padding: 0;
-	background-color: #520E0E;
-	color: #CFD7D1;
+	background-color: #C7FA67;
+	color: black;
 }
 
 main, header
@@ -57,6 +60,7 @@ fieldset
 	border-radius: 5px;
 	box-shadow: black 8px 8px 10px;
 	max-width: 97%;
+	background-color: #4682b4;
 }
 
 img
@@ -70,18 +74,16 @@ img
 
 nav
 {
-	display: flex;
-	justify-content: center;
-	text-align: top;
 	border: 1px outset black;
 	border-radius: 5px;
 	box-shadow: black 8px 8px 10px;
+	background-color: #4682b4;
 }
 
 a
 {
 	text-decoration: none;
-	color: #CFD7D1;
+	color: black;
 }
 
 a:hover
@@ -100,7 +102,7 @@ div
    cursor: pointer;
    margin: 5px;
    font-size: 1.2em;
-   background-color: #520E0E;
+   background-color: #4682b4;
    border: none;
 }
 
@@ -113,7 +115,7 @@ div
 {
    display: none;
    position: absolute;
-   background-color: #520E0E;
+   background-color: #4682b4;
    margin: 0;
    border: 1px solid black;
 }
@@ -133,7 +135,17 @@ div
 
 h1
 {
-	margin: 0;
+	margin: 0;	
+}
+
+#titre_principal
+{
+	text-decoration: none;
+}
+
+#titre_principal:hover
+{
+	color: black;
 }
 
 h3
@@ -149,14 +161,7 @@ h4
 
 h1, h2, h3, button
 {
-	font-family: 'lily_script_oneregular';
-}
-
-#photos_gîte
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 0;
+	font-family: 'bhayaLibre-Medium';
 }
 
 #legende
@@ -168,7 +173,7 @@ h1, h2, h3, button
 	text-align: center;
 }
 
-#photos_maison
+#photos_maison, #photos_annexe, #photos_studio
 {
 	display: flex;
 	flex-wrap: wrap;	
@@ -195,10 +200,11 @@ footer
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: #0F0F0F;
+	background-color: #4682b4;
 	border-top: 1px outset black;
 	border-radius: 10px 10px 0 0;
 	padding: 5px;
+	color: white;
 }
 
 #signature, #adresse
@@ -213,5 +219,16 @@ footer
 		flex-wrap: nowrap;
 		flex-direction: column;
 		width: 60%;
+	}
+
+	nav
+	{
+		display: flex;	
+		justify-content: center;
+		text-align: top;
+		border: 1px outset black;
+		border-radius: 5px;
+		box-shadow: black 8px 8px 10px;
+		background-color: #4682b4;
 	}
 }
